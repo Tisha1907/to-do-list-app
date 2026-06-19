@@ -1,17 +1,18 @@
-body{
+body {
     font-family: Arial, sans-serif;
-    background:#0b1220;
-    color:white;
-    display:flex;
-    justify-content:center;
-    padding:40px;
+    background: #0b1220;
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
 }
 
-.container{
-    width:500px;
-    background:#111827;
-    padding:20px;
-    border-radius:10px;
+.container {
+    width: 100%;
+    max-width: 500px;
+    background: #111827;
+    padding: 20px;
+    border-radius: 10px;
 }
 
 h1{
@@ -57,4 +58,25 @@ li{
     margin:10px 0;
     background:#1f2937;
     border-radius:5px;
+}
+@media (max-width: 600px) {
+    .container {
+        padding: 15px;
+    }
+
+    .input-section {
+        flex-direction: column;
+    }
+
+    .input-section button {
+        width: 100%;
+    }
+
+    .filters {
+        flex-wrap: wrap;
+    }
+
+    .filters button {
+        flex: 1;
+    }
 }
